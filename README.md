@@ -13,8 +13,8 @@ Install (for windos)
 
 3. setup Plugins directory .vim  (C:\Documents and Settings\user).
 
-<<<<<<< HEAD
      $mkdir  ~/.vim/bundle/vundle/
+
      $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 4. config _vimrc file
@@ -22,10 +22,11 @@ Install (for windos)
      $git clone  git@github.com:ybj2004/vim4perl.git
 
 5.  $cp vimrc_improved  C:/program files/vim/
+
     $mv vimrc_improved _vimrc
 
 6. run   
-=======
+
      mkdir ~/.vim/bundle
 
 4. config _vimrc file
@@ -33,7 +34,6 @@ Install (for windos)
      git clone  git@github.com:ybj2004/vim4perl.git
 
 5. run   
->>>>>>> af1f7b2... first_commit
 
      BundleInstall
 
