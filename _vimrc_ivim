@@ -93,6 +93,8 @@ set viewoptions+=slash,unix " Better Unix/Windows compatibility
 set viewoptions-=options " in case of mapping change
 set fileformats=unix,mac,dos " Auto detect the file formats
 
+"set guioptions-=m "menu
+set guioptions-=T   "toobar"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

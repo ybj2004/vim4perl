@@ -19,7 +19,7 @@ Install (for windos)
 
 4. config _vimrc file
 
-     $git clone  git@github.com:ybj2004/vim4perl.git
+     $git clone  https://github.com/ybj2004/vim4perl
 
 5.  $cp vimrc_improved  C:/program files/vim/
 
