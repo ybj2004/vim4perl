@@ -54,21 +54,6 @@ autocmd BufReadPost * cd %:p:h  " 读文件时自动设定当前目录为刚读入文件所在的目录
 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax enable
-syntax on                                 " 语法高亮 
-colorscheme desert      		          " desert 配色方案
-"colorscheme solarized     		          " solarized 配色方案
-"colorscheme hybrid
-"
-
-" Only have cursorline in current window and in normal window
-autocmd WinLeave * set nocursorline
-autocmd WinEnter * set cursorline
-auto InsertEnter * set nocursorline
-auto InsertLeave * set cursorline
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 
 
@@ -176,6 +161,7 @@ nmap <C-v> "yp
 
             " My Bundles here:
               " Original repos on github
+                Bundle 'w0ng/vim-hybrid'
                 Bundle 'jcf/vim-latex'
                 Bundle 'gooselinux/perltidy'
                 Bundle 'scrooloose/nerdtree'
@@ -199,6 +185,22 @@ nmap <C-v> "yp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+syntax on                                 " 语法高亮
+"set background=dark                       " Set background
+colorscheme hybrid                        " 用到hybrid所以放在插件管理之后
+nnoremap <silent>\d :colorscheme desert<CR>
+nnoremap <silent>\h :colorscheme hybrid<CR>
+nnoremap <silent>\s :colorscheme solarized<CR>
+
+" Only have cursorline in current window and in normal window
+autocmd WinLeave * set nocursorline
+autocmd WinEnter * set cursorline
+auto InsertEnter * set nocursorline
+auto InsertLeave * set cursorline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 """""""""""""""""""""""""minibufferexpl"""""""""""""""""""""""""""""""""""""""""
